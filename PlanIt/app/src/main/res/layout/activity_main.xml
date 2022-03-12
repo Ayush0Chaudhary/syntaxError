@@ -39,6 +39,11 @@
         android:backgroundTint="@color/purple_200"
         android:src="@drawable/ic_baseline_add_24" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 
 </RelativeLayout>
