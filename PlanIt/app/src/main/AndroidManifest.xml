@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlanIt">
         <activity
+            android:name=".achievement"
+            android:exported="false" />
+        <activity
             android:name=".Time"
             android:exported="false" />
         <activity

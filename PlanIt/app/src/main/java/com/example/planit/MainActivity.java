@@ -57,7 +57,8 @@ private Button button;
         ItemTouchHelper itemTouchHelper = new
                 ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
         itemTouchHelper.attachToRecyclerView(tasksRecycler);
-button= findViewById(R.id.button);
+
+        button= findViewById(R.id.button12);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
