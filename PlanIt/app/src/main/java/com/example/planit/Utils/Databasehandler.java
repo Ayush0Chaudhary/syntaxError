@@ -36,13 +36,13 @@ public class Databasehandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-     db.execSQL(CREATE_TODO_TABLE);
+     sqLiteDatabase.execSQL(CREATE_TODO_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
         //DROP THE TABLE IF EXIST ALREADY
-        db.execSQL("DROP TABLE IF EXISTS " + TODO_TABLE);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TODO_TABLE);
         //CREATE A NEW TABLE
         onCreate(sqLiteDatabase);
     }
