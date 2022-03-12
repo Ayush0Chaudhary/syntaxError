@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/teal_200">
+
+        <Button
+            android:id="@+id/stopstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_margin="8dp"/>
+
+        <Chronometer
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/stopstart"
+            android:layout_marginStart="-281dp"
+            android:format="00:00:00"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="machu"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
