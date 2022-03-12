@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
 
         tasksAdapter.setTasks(taskList);
 
-     /*   ItemTouchHelper itemTouchHelper = new
+        ItemTouchHelper itemTouchHelper = new
                 ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
-        itemTouchHelper.attachToRecyclerView(tasksRecyclerView);
-*/
+        itemTouchHelper.attachToRecyclerView(tasksRecycler);
+
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
