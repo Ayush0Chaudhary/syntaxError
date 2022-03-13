@@ -1,4 +1,5 @@
-# PlanIt is a To-Do List App 
+# PlanIt 
+## To-Do List App 
 with additional Functionalities like Stop-Watch, Achievements, Leagues etc. PlanIt focuses on increasing Productivity of user by rewarding him/her as they progress.
 
 PROFILE PAGE we have also added 3 League viz Bronze, Silver, Gold Leagues. Due to time constraints we have limited their use. It also has Acheivements Section where user get awarded as they progress in performing tasks.
