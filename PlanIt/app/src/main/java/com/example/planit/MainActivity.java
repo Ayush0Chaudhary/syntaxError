@@ -21,8 +21,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements DialogCloseListener  {
-
+private Button ac_button;
 private Button button;
+private Button PL_button;
     private RecyclerView tasksRecycler;
     private ToDoAdapter tasksAdapter;
     private FloatingActionButton fab;
@@ -36,7 +37,20 @@ private Button button;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        button =findViewById(R.id.buttton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opentivity();
+            }
+        });
+PL_button = findViewById(R.id.profilebtn);
+PL_button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        pl_activity();
+    }
+});
 
         //hiding the action bar
         getSupportActionBar().hide();
@@ -75,10 +89,20 @@ private Button button;
 
     }
 
+    private void pl_activity() {
+        Intent intent = new Intent(this, profile_layout.class);
+        startActivity(intent);
+    }
+
     public void openTime(){
         Intent intent = new Intent(this,Time.class);
         startActivity(intent);
 
+    }
+
+    public void opentivity(){
+        Intent intent = new Intent(this, achievement.class);
+        startActivity(intent);
     }
     @Override
     public void handleDialogClose(DialogInterface dialog){

@@ -6,26 +6,65 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".MainActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:text="PlanIt"
-    android:textAllCaps="false"
-    android:layout_centerHorizontal="true"
-    android:id="@+id/textview"
-    android:textStyle="bold"
-    android:textSize="24sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="PlanIt"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textview"
+                android:textStyle="bold"
+                android:textSize="28sp"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="SET TIME" />
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/buttton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="achievement"/>
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profilebtn"
+                android:text="profile"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
         android:id="@+id/tasksRecycleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:foregroundGravity="center"
         android:layout_below="@+id/textview"
         android:nestedScrollingEnabled="true"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
+
+
+
+        </LinearLayout>
+    </ScrollView>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_tasksd"
         android:layout_width="69dp"
@@ -38,12 +77,4 @@
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/purple_200"
         android:src="@drawable/ic_baseline_add_24" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SET TIME" />
-
-
 </RelativeLayout>

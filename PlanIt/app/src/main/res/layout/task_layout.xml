@@ -13,27 +13,12 @@
 
         android:background="#1D4DAE">
 
-        <Button
-            android:id="@+id/stopstart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:layout_alignParentEnd="true"
-
-            android:layout_margin="8dp" />
-
-        <Chronometer
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/stopstart"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="-281dp"
-            android:format="00:00:00"
-            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/textview"
-            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="machu"

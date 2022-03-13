@@ -4,6 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".achievement">
+    android:background="@drawable/background">
+    <TextView
+        android:text="Achievements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/textView6" android:textColor="#A6A6A6"
+        android:textSize="36sp" android:background="@drawable/rounded_corners" android:backgroundTint="#443F60"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout" app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp" android:layout_margin="5dp" android:textAlignment="center"/>
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_margin="5dp" android:padding="10dp"
+        android:id="@+id/gridLayout">
 
+        <TextView
+            android:text="1. Getting Started - 2 Tasks"
+            android:layout_width="110dp"
+            android:layout_height="110dp" android:id="@+id/textView3" android:padding="12dp"
+            android:background="@drawable/rounded_corners" android:textSize="15sp"
+            android:textColor="#ECECEC" android:backgroundTint="#00dec5"
+            app:layout_row="0" app:layout_column="0" android:layout_margin="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+        <TextView
+            android:text="2. Steps Towards Productivity - 5 Tasks"
+            android:layout_width="110dp"
+            android:layout_height="110dp" android:id="@+id/textView7" android:padding="12dp"
+            android:background="@drawable/rounded_corners" android:textSize="15sp"
+            android:textColor="#ECECEC" android:backgroundTint="#00dec5"
+            app:layout_row="0" app:layout_column="1" android:layout_margin="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#00dec5"
+            android:padding="12dp"
+            android:text="3. Adding value of Time to Life - 10 Tasks"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#ECECEC"
+            android:textSize="15sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:text="4. Task's Fever! - 25 Tasks"
+            android:layout_width="110dp"
+            android:layout_height="110dp" android:id="@+id/textView5" android:padding="12dp"
+            android:background="@drawable/rounded_corners" android:textSize="15sp"
+            android:textColor="#ECECEC" android:backgroundTint="#00dec5"
+            app:layout_row="1" app:layout_column="0" android:layout_margin="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+        <TextView
+            android:text="5. Serial Tasker! - 50 Tasks"
+            android:layout_width="110dp"
+            android:layout_height="110dp" android:id="@+id/textView4" android:padding="12dp"
+            android:background="@drawable/rounded_corners" android:textSize="15sp"
+            android:textColor="#ECECEC" android:backgroundTint="#00dec5"
+            app:layout_row="1" app:layout_column="1" android:layout_margin="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+        <TextView
+            android:text="6. Gawd!! - 100 Tasks"
+            android:layout_width="110dp"
+            android:layout_height="110dp" android:id="@+id/textView9" android:padding="12dp"
+            android:background="@drawable/rounded_corners" android:textSize="15sp"
+            android:textColor="#ECECEC" android:backgroundTint="#00dec5"
+            app:layout_row="1" app:layout_column="2" android:layout_margin="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+    </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

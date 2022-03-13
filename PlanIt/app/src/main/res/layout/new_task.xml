@@ -15,8 +15,9 @@
         android:id="@+id/add_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="save"
         android:layout_alignParentRight="true"
+        android:text="save"
+        android:textColor="@color/black"
         android:textSize="16sp"
 
         />
